@@ -1,5 +1,7 @@
 import { useState,useEffect } from "react";
 import RestCard from "./RestCard";
+import Shimmer from "./Shimmer";
+
 
 export default function Reasturant(){
      
@@ -20,14 +22,17 @@ export default function Reasturant(){
    // console.log(Restdata);
     
     },[])
-
+    
+    if(Restdata.length==0){
+        return <Shimmer></Shimmer>
+    }
 
 
 
 
     return(
         <>
-        <div className="w-[80%] flex flex-wrap mx-auto gap-4">
+        <div className="w-[80%] flex flex-wrap mx-auto gap-4 mt-20">
             {
               Restdata.map((value)=><RestCard key={value?.info?.id} value={value}></RestCard>)
             }
