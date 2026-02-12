@@ -8,14 +8,14 @@ export default function RestMenu(){
     useEffect(()=>{
         
          async function fetchdata() {
-            const proxy="https://cors-anywhere.herokuapp.com/";
+           const proxy="https://cors-anywhere.herokuapp.com/";
             const swiggy=`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=${id}`;
             const response = await fetch(proxy+swiggy);
             const data= await response.json();
             const tempdata=data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
             const filterdata = tempdata.filter((item)=>"title" in item?.card?.card);
             setRestdata(filterdata);
-
+           
             
          }
          fetchdata();
