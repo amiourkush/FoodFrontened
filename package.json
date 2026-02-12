@@ -1,7 +1,7 @@
 {
   "name": "swiggy-clone",
   "version": "1.0.0",
-  "description": "",
+  "description": "filterdata?.card?.card?.itemCards",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,10 +11,21 @@
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
+   
+    
     "parcel": "^2.16.4",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "^7.13.0",
     "tailwindcss": "^4.1.18"
-  }
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiourkush/FoodFrontened.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amiourkush/FoodFrontened/issues"
+  },
+  "homepage": "https://github.com/amiourkush/FoodFrontened#readme"
 }
