@@ -15,7 +15,7 @@ export default function RestMenu(){
             const filterdata = tempdata.filter((item)=>"title" in item?.card?.card);
              setRestdata(filterdata);
            
-           console.log(Restdata);
+           //console.log(Restdata);
          }
          fetchdata();
          
