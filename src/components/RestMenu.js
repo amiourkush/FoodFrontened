@@ -11,7 +11,9 @@ export default function RestMenu(){
          function fetchdata() {
           
             
-            
+            const tempdata=restmenu?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+            const filterdata = tempdata.filter((item)=>"title" in item?.card?.card);
+             setRestdata(filterdata);
            
            //console.log(Restdata);
          }
