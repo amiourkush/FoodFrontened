@@ -7,7 +7,7 @@ export default function Menu({menu}){
             <h1>{menu?.card?.card?.title}</h1>
             <div>
                 {
-                    menu?.card?.card?.itemCards.map((menuinfo)=><MenuInfo key={menuinfo?.card?.info?.id} menuinfo={menuinfo}></MenuInfo>)
+                    menu?.card?.card?.itemCards?.map((menuinfo)=><MenuInfo key={menuinfo?.card?.info?.id} menuinfo={menuinfo}></MenuInfo>)
                 }
             </div>
           </div>
