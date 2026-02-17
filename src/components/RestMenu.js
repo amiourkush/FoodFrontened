@@ -23,6 +23,8 @@ export default function RestMenu(){
 
 
    },[])
+  
+    
     return(
         <>
         <div className="w-[80vw] mx-auto">
