@@ -4,7 +4,7 @@ export default function MenuInfo({menuinfo}){
         <div className="flex justify-between mt-2">
             <div className="w-[80%]">
                 <h2 className="text-lg text-black font-bold">{menuinfo?.card?.info?.name}</h2>
-                {/* <p>{"Rs"+menuinfo?.card?.info?.defaultPrice/100}</p> */}
+              
                 <p>{"Rs"+(menuinfo.card.info.defaultPrice?menuinfo?.card?.info?.defaultPrice/100:menuinfo?.card?.info?.price/100)}</p>
                 <p>{menuinfo?.card?.info?.ratings?.aggregatedRating?.rating +"("+menuinfo?.card?.info?.ratings?.aggregatedRating?.ratingCountV2+")"}</p>
                 <p>{menuinfo?.card?.info?.description}</p>
