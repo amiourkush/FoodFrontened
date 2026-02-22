@@ -24,7 +24,7 @@ export default function RestMenu(){
 
 
    },[])
-  
+
     
     return(
         <>
@@ -34,7 +34,7 @@ export default function RestMenu(){
         </div>
         <div className="w-[80vw] mx-auto">
           {
-            Restdata.map((menu)=><Menu key={menu?.card?.card?.title} menu={menu}></Menu>)
+            Restdata.map((menu)=><Menu key={menu?.card?.card?.title} menu={menu} food={selected}></Menu>)
           }
         </div>
         
