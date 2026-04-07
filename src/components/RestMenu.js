@@ -8,8 +8,7 @@ export default function RestMenu() {
 
     useEffect(() => {
         function fetchdata() {
-            const tempdata =
-                restmenu?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+            const tempdata =restmenu?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
 
             const filterdata = tempdata.filter(
                 (item) => "title" in item?.card?.card

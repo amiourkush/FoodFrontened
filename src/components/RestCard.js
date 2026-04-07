@@ -40,7 +40,7 @@ export default function RestCard({ value }) {
 
                         
                         <span className="bg-green-600 text-white px-2 py-[2px] rounded-md text-xs font-semibold">
-                            ⭐ {info?.avgRatingString}
+                            ⭐{info?.avgRatingString}
                         </span>
 
                        

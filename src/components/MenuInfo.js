@@ -73,10 +73,7 @@ export default function MenuInfo({ menuinfo }) {
                         className="absolute bottom-2 left-1/2 -translate-x-1/2 
                         bg-white text-green-600 font-bold px-4 py-1 rounded-lg 
                         shadow-md hover:bg-green-600 hover:text-white transition"
-                    >
-                        ADD
-                    </button>
-                ) : (
+                    >ADD</button>) : (
                     <div
                         className="absolute bottom-2 left-1/2 -translate-x-1/2 
                         flex items-center gap-3 bg-green-600 text-white px-3 py-1 

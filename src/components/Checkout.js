@@ -30,7 +30,7 @@ export default function Checkout() {
                                 key={item.id}
                                 className="flex justify-between items-center border-b py-4"
                             >
-                                {/* LEFT */}
+                                
                                 <div>
                                     <h2 className="font-semibold text-lg">
                                         {item.name}
@@ -40,7 +40,7 @@ export default function Checkout() {
                                     </p>
                                 </div>
 
-                                {/* RIGHT */}
+                                
                                 <div className="flex items-center gap-3">
                                     <button
                                         onClick={() => dispatch(DecrementItems(item))}
@@ -63,13 +63,13 @@ export default function Checkout() {
                             </div>
                         ))}
 
-                        {/* TOTAL */}
+                        
                         <div className="flex justify-between mt-6 text-xl font-bold">
                             <span>Total</span>
                             <span>₹{total}</span>
                         </div>
 
-                        {/* BUTTON */}
+                        
                         <button className="w-full mt-6 bg-green-600 text-white py-3 rounded-xl text-lg font-bold hover:bg-green-700 transition">
                             Proceed to Payment 
                         </button>
